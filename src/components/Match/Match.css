@@ -1,0 +1,127 @@
+.command-item {
+    flex-direction: row;
+    display: flex;
+    flex: 2;
+    align-items: center;
+    gap: 14px;
+    font-size: 16px;
+}
+
+@media only screen and (max-width: 768px) {
+    .command-item {
+        font-size: 14px;
+        gap: 6px;
+    }
+}
+.main-container {
+    background-color: #0b0e12;
+    width: 100%;
+    padding: 16px 16px;
+    margin-bottom: 10px;
+    color: white;
+}
+@media only screen and (max-width: 768px) {
+    .main-container {
+        padding: 8px 8px;
+    }
+}
+.match-item {
+    display: flex;
+    gap: 25px;
+    align-items: center;
+    flex: 1;
+}
+
+.score-view {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    font-size: 20px;
+    gap: 10px;
+    display: flex;
+}
+@media only screen and (max-width: 768px) {
+    .score-view {
+        font-size: 14px;
+    }
+}
+.status {
+    align-items: center;
+    justify-content: center;
+    border-radius: 4px;
+    text-align: center;
+    display: flex;
+    padding: 6px 0px;
+    font-size: 12px;
+    min-width: 70px;
+    max-width: 92px;
+}
+
+.status-live {
+    background-color: #43ad28;
+}
+
+.status-finished {
+    background-color: #eb0237;
+}
+.status-scheduled {
+    background-color: #eb6402;
+}
+
+.command-image {
+    width: 28px;
+    height: 28px;
+}
+.additional-info {
+    display: flex;
+    flex-direction: row;
+    flex: 1;
+    gap: 8px;
+    margin-top: 32px;
+}
+@media only screen and (max-width: 768px) {
+    .additional-info {
+        flex-direction: column;
+        margin-top: 16px;
+    }
+}
+.team-info {
+    display: flex;
+    flex-direction: row;
+    flex: 1;
+    gap: 8px;
+}
+.container {
+    display: flex;
+    gap: 5px;
+    flex-direction: column;
+    flex: 1;
+}
+.match-info {
+    background-color: #101318;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 14px 12px;
+    font-size: 14px;
+}
+.primary {
+    color: #fafafa66;
+}
+.divider {
+    height: 16px;
+    width: 1px;
+    background-color: #fafafa66;
+}
+.info-item {
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+}
+.separator {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
