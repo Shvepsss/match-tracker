@@ -1,0 +1,25 @@
+.main{
+    display: flex;
+    flex:1;
+    background-color: #101318;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 14px;
+
+    border-radius: 4px;
+    padding:7px 12px;
+}
+@media only screen and (max-width: 768px) {
+    .main{
+        flex-direction: column;
+        justify-content: center;
+    }
+}
+
+.info{
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+
+}
