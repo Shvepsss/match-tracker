@@ -1,46 +1,30 @@
-# Getting Started with Create React App
+Матч-трекер
+Это простое веб-приложение "Матч-трекер", которое позволяет отслеживать матчи, получая данные с внешнего API. Приложение отображает информацию о матчах, включая названия команд, счет и статус матча. Оно также предоставляет возможность обновлять данные и фильтровать события по различным критериям.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Функционал
+Загрузка списка матчей с API
 
-## Available Scripts
+Приложение автоматически загружает список матчей с внешнего API при первой загрузке страницы и по нажатию кнопки "Обновить".
+Отображение названий команд, счета и статуса матча
 
-In the project directory, you can run:
+На главной странице отображаются названия команд, счет и текущий статус каждого матча (например, "In Progress", "Finished").
+Обновление данных
 
-### `npm start`
+Пользователь может нажать кнопку "Обновить", чтобы загрузить последние данные о матчах.
+Индикатор загрузки
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+Во время запроса данных от API показывается индикатор загрузки, информируя пользователя, что данные загружаются.
+Сообщение об ошибке
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+В случае недоступности API или ошибки при загрузке данных отображается сообщение об ошибке.
 
-### `npm test`
+Детали матча
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+По клику на матч, приложение отображает детальную информацию, включая события матча, такие как очки, место и другие важные моменты.
+Фильтрация событий
 
-### `npm run build`
+Пользователи могут фильтровать события матча по статусу (например, только Live или только Finished).
+Адаптация экрана
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Приложение адаптировано для разных устройств, чтобы быть доступным как на компьютерах, так и на мобильных устройствах.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
